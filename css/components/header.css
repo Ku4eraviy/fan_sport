@@ -22,6 +22,175 @@
     justify-content: center;
     gap: 30px;
 }
+
+/* Базовые стили */
+:root {
+  --primary-color: #3a86ff;
+  --secondary-color: #8338ec;
+  --text-color: #fff;
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Стили для крутого бургера */
+.hamburger {
+  display: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: var(--transition);
+  z-index: 1000;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--transition);
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  transition: var(--transition);
+}
+
+.hamburger-inner::before {
+  top: -8px;
+}
+
+.hamburger-inner::after {
+  bottom: -8px;
+}
+
+.hamburger--spin .hamburger-inner {
+  transition: var(--transition);
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+  background-color: transparent;
+}
+
+.hamburger--spin.is-active .hamburger-inner::before {
+  transform: translateY(8px) rotate(45deg);
+  background-color: var(--text-color);
+}
+
+.hamburger--spin.is-active .hamburger-inner::after {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: var(--text-color);
+}
+
+/* Стили для стеклянного меню */
+.glass-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100vh;
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-menu.active {
+  right: 0;
+}
+
+.glass-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.glass-menu li {
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  transition: var(--transition);
+}
+
+.menu-link span {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+  transition: var(--transition);
+}
+
+.menu-link:hover::before {
+  left: 100%;
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 50px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.desktop-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Скрываем мобильные элементы на десктопе */
+.hamburger,
+.mobile-menu {
+  display: none;
+}
+
 .logo {
     max-width: 100%;
     margin-right: 30px;
@@ -30,9 +199,58 @@
 .heady_text {
     font-size: 40px;
     color: white;
-    font-family: 'Garamond';
+    font-family: 'Blender Pro';
+    font-weight: bold;
 }
 
 .heady_text:hover {
-    color: #3632ff;
+    color: #FFFF00;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+@media (max-width: 1199px) {
+
+    .heady {
+    gap: 100px;
+
+}
+}
+
+/* Адаптивность */
+/* Адаптив для мобилок */
+@media (max-width: 991px) {
+  .desktop-menu {
+    display: none;
+  }
+  
+  .hamburger,
+  .mobile-menu {
+    display: block;
+  }
+  
+  /* Остальные стили из предыдущего примера */
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    /* ... остальные стили glass-menu ... */
+  }
+  
+  .mobile-menu.active {
+    right: 0;
+  }
+
+  .heady {
+    justify-content: space-between;
+
+}
 }

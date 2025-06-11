@@ -1,5 +1,6 @@
         .otziv {
             margin-top: 75px;
+            margin-bottom: 30px;
         }
 
         .reviews-section {
@@ -25,18 +26,21 @@
             font-weight: bold;
             color: #333;
             margin-bottom: 5px;
+            font-family: 'Blender Pro';
         }
         
         .review-date {
             color: #777;
-            font-size: 0.9em;
+            font-size: 15px;
             margin-bottom: 10px;
+            font-family: 'Blender Pro';
         }
         
         .review-text {
+            font-size: 20px;
             line-height: 1.5;
             color: black;
-            font-family: 'Garamond';
+            font-family: 'Blender Pro';
         }
         
         .load-more-btn {
@@ -60,4 +64,55 @@
             text-align: center;
             color: #333;
             margin-bottom: 30px;
+        }
+
+        .zvezda {
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+        }
+
+        .text_52{
+           margin-top: 10px;
+           font-size: 25px;
+            max-width: 600px;
+            color: white;
+            font-family: 'Blender Pro';
+}
+
+        @media (max-width: 1199px) {
+                    
+        }
+
+        @media (max-width: 991px) {
+
+            .otziv {
+                margin-top: 65px;
+            }
+
+            .text_52 {
+                font-size: 18px;
+            }
+
+            .review-date {
+               font-size: 14px;
+
+        }
+        
+        .review-text {
+            font-size: 18px;
+
+        }
+            
+        }
+
+        @media (max-width: 575px) {
+
+            .otziv {
+                margin-top: 55px;
+            }
+
+            .text_52 {
+                font-size: 17px;
+            }
         }

@@ -17,19 +17,37 @@
         <div class="heady">
         <img src="images/logo.png" class="img">
 
-        <div class="burger-btn" id="burgerBtn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
 
-        <!-- Основное меню -->
-        <div class="perehod">
-            <a href="index.html#katalog"><div class=heady_text>Каталог</div></a>
-            <a href="index.html#otziv"><div class=heady_text>Отзывы</div></a>
-            <a href="index.html#foto"><div class=heady_text>Фото</div></a>
-            <a href="index.html#o_nas"><div class=heady_text>О нас</div></a>
-        </div>
+      <div class="menu-wrapper">
+  <!-- Основное меню (видно на десктопе) -->
+  <nav class="desktop-menu">
+    <ul>
+      <li><a href="#katalog" class="menu-link"><span>Каталог</span></a></li>
+      <li><a href="#otziv" class="menu-link"><span>Отзывы</span></a></li>
+      <li><a href="#foto" class="menu-link"><span>Фото</span></a></li>
+      <li><a href="#o_nas" class="menu-link"><span>О нас</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- Бургер (скрыт на десктопе) -->
+  <button class="hamburger hamburger--spin" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  
+  <!-- Мобильное меню (скрыто на десктопе) -->
+  <nav class="mobile-menu glass-menu">
+    <ul>
+      <li><a href="#katalog" class="menu-link"><span>Каталог</span></a></li>
+      <li><a href="#otziv" class="menu-link"><span>Отзывы</span></a></li>
+      <li><a href="#foto" class="menu-link"><span>Фото</span></a></li>
+      <li><a href="#o_nas" class="menu-link"><span>О нас</span></a></li>
+    </ul>
+  </nav>
+</div>
+  
+</div>
         </div>
     </div>
 
@@ -39,19 +57,10 @@
 
         <div class="otstup"></div>
 
-        <div class="info">
-            <div class="info_1">
-                <div class="zvezda">
-                    <img src="images/zvezda.png" class="img">
-                    <p class="text_defolt"> 4.9</p>
-                </div>
-                <p class="text_info">Фан спорт</p>
-                <p class="text_defolt">Спортивный магазин, Товары для дачного отдыха и пикника, Спортивное питание</p>
-                <p class="text_defolt">Краснодарский край, Белореченск, улица Гоголя, 51</p>
-            </div>
-            <div class="info_2">
-                <img src="images/logo.png" class="img">
-            </div>
+        <div class="info">    
+            <p class="text_info">Фан спорт</p>
+            <p class="text_defolt">Спортивный магазин, Товары для дачного отдыха и пикника, Спортивное питание</p>
+            <p class="text_defolt">Краснодарский край, Белореченск, улица Гоголя, 51</p>
         </div>
 
         <div class="buttony">
@@ -59,11 +68,11 @@
                 <img src="images/button/button1.png" class="img">
                 +7(918) 271-08-51
             </button>
-            <button class="btn">
+            <button onclick="window.open('https://yandex.ru/map-widget/v1/?um=constructor%3A9f3bb6e641bf74578346be4acc81226106bfec2b85891c7baeb1435314be751f&amp;source=constructor')"  class="btn">
                 <img src="images/button/button2.png" class="img">
                 Как доехать
             </button>
-            <button class="btn">
+            <button onclick="window.location.href = '404.html'" class="btn">
                 <img src="images/button/button3.png" class="img">
                 Написать
             </button>
@@ -75,31 +84,41 @@
         <section id="katalog" class="section">
         <div class="katalog">
             <p class="text_red">Каталог</p>
-            <div class="katalog_info">
-                <div class="katalog_infi">
+                <div class="katalog_info">
                     <img src="images/katalog/katalog1.png" class="katalog_img">
-                    <p class="text_blue">Протеин</p>
+                    <div class="text_block">
+                        <p class="text_blue">Протеин</p>
+                        <p class="text_defolt">Протеин – это основа твоего прогресса, будь ты атлет, 
+                            фитнес-энтузиаст или просто стремишься к здоровому образу жизни. Это чистый белок.</p>
+                    </div>
                 </div>
-                <div class="katalog_infi">
+                <div class="katalog_info2">
                     <img src="images/katalog/katalog2.png" class="katalog_img">
-                    <p class="text_blue">Гейнер</p>
+                    <div class="text_block">
+                        <p class="text_blue">Гейнер</p>
+                        <p class="text_defolt">Гейнер – это идеальное топливо для тех, кто хочет быстро набрать массу
+                            , увеличить силу и выносливость. Это сбалансированная смесь белков и углеводов.</p>
+                    </div>
                 </div>
-                <div class="katalog_infi">
+                <div class="katalog_info">
                     <img src="images/katalog/katalog3.png" class="katalog_img">
-                    <p class="text_blue">Креатин</p>
+                    <div class="text_block">
+                        <p class="text_blue">Креатин</p>
+                        <p class="text_defolt">Креатин – это натуральное топливо для мышц, которое помогает тебе 
+                            выкладываться на 110% в каждой тренировке. Он уже содержится в организме, но дополнительный
+                             приём даёт реальный прирост мощности и ускоряет прогресс.</p>
+                    </div>
                 </div>
 
-            </div>
         </div>
         </section>
 
         <section id="otziv" class="section">
         <div class="otziv">
             <p class="text_red">Отзывы</p>
-            <p class="text_info">4.9</p>
             <div class="zvezda">
                 <img src="images/zvezda.png" class="img">
-                <p class="text_defolt">52 отзыва</p>
+                <p class="text_52">52 отзыва</p>
             </div>
         </div>
 
@@ -231,11 +250,11 @@
                 <img src="images/button/button1.png" class="img">
                 +7(918) 271-08-51
             </button>
-            <button class="btn">
+             <button onclick="window.open('https://yandex.ru/map-widget/v1/?um=constructor%3A9f3bb6e641bf74578346be4acc81226106bfec2b85891c7baeb1435314be751f&amp;source=constructor')"  class="btn">
                 <img src="images/button/button2.png" class="img">
                 Как доехать
             </button>
-            <button class="btn">
+            <button onclick="window.location.href = '404.html'" class="btn">
                 <img src="images/button/button3.png" class="img">
                 Написать
             </button>
@@ -247,21 +266,21 @@
 
             <div class="krug">
                 <div class="krug_info">
-                    <img src="images/krug/krug1.png" class="img">
-                    <p class="text_defolt">Оплата картой</p>
+                    <img src="images/krug/krug1.png" class="krug_img">
+                    <p class="text_52">Оплата картой</p>
                 </div>
                 <div class="krug_info">
-                    <img src="images/krug/krug2.png" class="img">
-                    <p class="text_defolt">доставка</p>
+                    <img src="images/krug/krug2.png" class="krug_img">
+                    <p class="text_52">доставка</p>
                 </div>
                 <div class="krug_info">
-                    <img src="images/krug/krug3.png" class="img">
-                    <p class="text_defolt">Парковка для людей с инвалидностью</p>
+                    <img src="images/krug/krug3.png" class="krug_img">
+                    <p class="text_52">Парковка для людей с инвалидностью</p>
                 </div>
             </div>
 
               <div class="otstupy"></div>
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f3bb6e641bf74578346be4acc81226106bfec2b85891c7baeb1435314be751f&amp;source=constructor" width="1000" height="300" frameborder="0" ></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f3bb6e641bf74578346be4acc81226106bfec2b85891c7baeb1435314be751f&amp;source=constructor"  class="karta"></iframe>
         </div>
         </section> 
      
@@ -289,5 +308,6 @@
     
     <script src="foto.js"></script>
     <script src="btn.js"></script>
+    <script src="burger.js"></script>
 </body>
 </html>
