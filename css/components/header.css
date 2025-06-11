@@ -1,0 +1,38 @@
+.header {
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0;          /* Прижимаем к верхнему краю */
+    left: 0;         /* Прижимаем к левому краю */
+    width: 100%;     /* На всю ширину экрана */
+    padding: 10px 20px;
+    background: #F83A36;
+    z-index: 1000;   /* Убедитесь, что шапка поверх других элементов */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Небольшая тень для эффекта */
+}
+
+.heady {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+}
+
+.perehod {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.logo {
+    max-width: 100%;
+    margin-right: 30px;
+}
+
+.heady_text {
+    font-size: 40px;
+    color: white;
+    font-family: 'Garamond';
+}
+
+.heady_text:hover {
+    color: #3632ff;
+}

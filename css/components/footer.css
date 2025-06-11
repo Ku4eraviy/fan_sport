@@ -1,0 +1,25 @@
+.footer {
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+    background: #3632ff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footy1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.footy2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.photo {
+    max-width: 100px;
+    max-height: 100px;
+}

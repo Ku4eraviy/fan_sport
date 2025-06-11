@@ -1,0 +1,63 @@
+        .otziv {
+            margin-top: 75px;
+        }
+
+        .reviews-section {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .review {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .review.hidden {
+            display: none;
+        }
+        
+        .review-author {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .review-date {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .review-text {
+            line-height: 1.5;
+            color: black;
+            font-family: 'Garamond';
+        }
+        
+        .load-more-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3632ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .load-more-btn:hover {
+            background-color: #3632ff;
+        }
+        
+        .section-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }

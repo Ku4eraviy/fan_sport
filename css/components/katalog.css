@@ -1,0 +1,22 @@
+.katalog {
+    margin-top: 75px;
+
+}
+
+.katalog_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_blue {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #3632ff;
+    font-family: 'Garamond';
+}
+
+.katalog_img {
+    width: 100%;
+    border: 2px solid #ddd;
+}

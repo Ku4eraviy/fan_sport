@@ -1,0 +1,23 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.body {    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.35;
+    color: var(--black-);
+    background-color: var(--white-);
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Trebuchet';
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+    
+}

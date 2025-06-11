@@ -1,0 +1,23 @@
+.o_nas {
+    display: block;
+    margin-top: 75px;
+}
+
+.text_red {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: red;
+    font-family: 'Garamond';
+}
+
+.krug {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.krug_info {
+    display: flex;
+    gap: 5px;
+
+}
