@@ -36,8 +36,11 @@
 
 .text_info {
     margin-top: 10px;
+    margin-bottom: 50px;
     font-size: 52px;
     font-family: 'Blender Pro';
+    color: #F83A36;
+      font-weight: bold;
 }
 
 .text_defolt{

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fan sport</title>
+    <link rel="stylesheet" href="css/_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Форма обратной связи для сайта Fan Sport -->
+<div class="feedback-form">
+  <h3>Остались вопросы?</h3>
+  <p>Оставьте контакты - мы перезвоним!</p>
+  
+  <form id="fan-sport-form" action="/submit-form" method="POST">
+    <div class="form-group">
+      <label for="name">Ваше имя</label>
+      <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="phone">Телефон</label>
+      <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="question">Ваш вопрос</label>
+      <textarea id="question" name="question" placeholder="Например: Есть ли в наличии футбольные мячи Nike?"></textarea>
+    </div>
+    
+    <div class="form-group checkbox-group">
+      <input type="checkbox" id="agreement" name="agreement" required checked>
+      <label for="agreement">Я согласен на обработку персональных данных</label>
+    </div>
+    
+    <button type="submit" class="submit-btn">Жду звонка</button>
+  </form>
+</div>
+
+</body>
+</html>
